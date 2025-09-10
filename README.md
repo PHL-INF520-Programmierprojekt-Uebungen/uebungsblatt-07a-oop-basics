@@ -3,7 +3,7 @@
 
 In diesem Übungsblatt lernen Sie, objektorientierten Quellcode zur Lösung verschiedener Aufgaben zu entwickeln.
 
-## Übung: Vererbung (`Animals` - Tiere)
+## Übung 1: Vererbung (`Animals` - Tiere)
 
 ### Teil 1: Vererbung bei Tieren
 
@@ -33,7 +33,7 @@ Stellen Sie sich vor, Sie erstellen eine Zoo-Simulation. Neben der obigen Hierar
 2. Implementieren Sie eine Operation, um ein Tier zum Zoo hinzuzufügen (`addAnimal`), und eine Operation, um ein Tier aus dem Zoo zu entfernen (`removeAnimal`).
 3. Entfernen Sie den Kommentar für den Code in der `main`-Operation in der `Main`-Klasse und führen Sie ihn aus, um zu sehen, was passiert.
 
-## Übung: Bücherregal und Buchklasse
+## Übung 2: Bücherregal und Buchklasse (Zusammensetzung)
 
 In dieser Übung werden Sie objektorientiertes Programmieren im Kontext eines Bücherregals (`Bookshelf`) und eines Buchverwaltungssystems üben. 
 Implementieren Sie die Klassen im Paket `de.phl.programmingproject.bookshelf`.
@@ -70,7 +70,7 @@ Erstellen Sie schließlich in der `main` Operation ein `Bookshelf` Objekt und f�
 
 Implementieren Sie eine `equals`-Operation in der `Book` Klasse, die überprüft, ob zwei Bücher gleich sind. Zwei Bücher gelten als gleich, wenn sie denselben Titel, Autor und dieselbe Seitenanzahl haben.
 
-## Übung: Polymorphismus (`Employee` - Mitarbeiter)
+## Übung 3: Polymorphismus (`Employee` - Mitarbeiter)
 
 Erstellen Sie ein Java-Programm, das die Verwendung von Polymorphismus in der objektorientierten Programmierung im Kontext eines Mitarbeiterverwaltungssystems demonstriert. 
 Implementieren Sie die Klassen im Paket `de.phl.programmingproject.employee`.
@@ -84,7 +84,7 @@ Das Programm sollte aus den folgenden Klassen bestehen:
      Die `Employee` Klasse sollte auch eine abstrakte Operation namens `calculatePay()` haben, die die Bezahlung des Mitarbeiters basierend auf seinem Gehalt zurückgibt.
 
 2. Zwei Unterklassen, die die `Employee` Klasse erweitern:
-   - `SalariedEmployee`, die ein Attribut `double salary` (Jahresgehalt) hat, um das Gehalt des Mitarbeiters zu speichern, und einen Konstruktor, der die Parameter `name` und `salary` akzeptiert. Die Klasse soll die Operation `calculatePay() implementieren, um das monatliche Gehalt des Mitarbeiters zu berechnen, indem es das Jahresgehalt durch 12 teilt.
+   - `SalariedEmployee`, die ein Attribut `double salary` (Jahresgehalt) hat, um das Gehalt des Mitarbeiters zu speichern, und einen Konstruktor, der die Parameter `name` und `salary` akzeptiert. Die Klasse soll die Operation `calculatePay()` implementieren, um das monatliche Gehalt des Mitarbeiters zu berechnen, indem es das Jahresgehalt durch 12 teilt.
    - `HourlyEmployee`, die einen Konstruktor hat, der die Parameter `name` und `hourlyRate` akzeptiert. Darüber hinaus hat die Klasse die zusätzlichen Attribute `int hoursWorked` für die gearbeiteten Stunden des Mitarbeiters und `double hourlyRate` zur Speicherung des stündlichen Gehalts des Mitarbeiters. Implementieren Sie die Operation `calculatePay()`, um das Gehalt des Mitarbeiters zu berechnen, indem Sie den stündlichen Satz mit den gearbeiteten Stunden multiplizieren. Um die gearbeiteten Stunden des Mitarbeiters hinzuzufügen, implementieren Sie die Operation `addHoursWorked(int hours)`.
 
 3. Eine `Main` Klasse, die eine `main()` Operation enthält. In der `main()` Operation sollen Sie eine Liste von `Employee`-Objekten erstellen, die mindestens einen `SalariedEmployee` und mindestens einen `HourlyEmployee` enthält. Durchlaufen Sie die Liste (bzw. iterieren Sie über die Liste) und rufen Sie die `calculatePay()` Operation für jedes Objekt auf. Geben Sie den Namen des Mitarbeiters und sein Gehalt auf der Konsole aus.
