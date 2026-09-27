@@ -1,7 +1,7 @@
 # Übungsblatt: Objektorientierte Programmierung - Grundlagen
 [Link to English version](./README_en.md)
 
-In diesem Übungsblatt lernen Sie, objektorientierten Quellcode zur Lösung verschiedener Aufgaben zu entwickeln.
+In diesem Übungsblatt üben Sie konkrete Vererbung, Überschreiben und Zusammensetzung. Voraussetzungen sind eigene Klassen, Konstruktoren, Methoden und einfache Collections aus ÜB 06. Bearbeiten Sie zuerst die Tiere und den Zoo, anschließend das Bücherregal.
 
 ## Übung 1: Vererbung (`Animals` - Tiere)
 
@@ -35,7 +35,7 @@ Stellen Sie sich vor, Sie erstellen eine Zoo-Simulation. Neben der obigen Hierar
 
 ## Übung 2: Bücherregal und Buchklasse (Zusammensetzung)
 
-In dieser Übung werden Sie objektorientiertes Programmieren im Kontext eines Bücherregals (`Bookshelf`) und eines Buchverwaltungssystems üben. 
+In dieser Übung werden Sie objektorientiertes Programmieren im Kontext eines Bücherregals (`Bookshelf`) und eines Buchverwaltungssystems üben.
 Implementieren Sie die Klassen im Paket `de.phl.programmingproject.bookshelf`.
 
 ### Aufgabe 1: Die `Bookshelf` Klasse
@@ -70,21 +70,8 @@ Erstellen Sie schließlich in der `main` Operation ein `Bookshelf` Objekt und f�
 
 Implementieren Sie eine `equals`-Operation in der `Book` Klasse, die überprüft, ob zwei Bücher gleich sind. Zwei Bücher gelten als gleich, wenn sie denselben Titel, Autor und dieselbe Seitenanzahl haben.
 
-## Übung 3: Polymorphismus (`Employee` - Mitarbeiter)
+## Ausblick auf ÜB 07b
 
-Erstellen Sie ein Java-Programm, das die Verwendung von Polymorphismus in der objektorientierten Programmierung im Kontext eines Mitarbeiterverwaltungssystems demonstriert. 
-Implementieren Sie die Klassen im Paket `de.phl.programmingproject.employee`.
+Dieses Blatt behandelt konkrete Vererbung, Überschreiben und Zusammensetzung. Im Zoo wird bereits dieselbe Operation über den gemeinsamen Typ `Animal` aufgerufen: Die konkrete Tierklasse bestimmt die ausgeführte Implementierung.
 
-### Aufgaben
-
-Das Programm sollte aus den folgenden Klassen bestehen:
-
-1. Eine abstrakte Klasse namens `Employee` mit dem folgenden Attribut:
-   - `String name`: der Name des Mitarbeiters.
-     Die `Employee` Klasse sollte auch eine abstrakte Operation namens `calculatePay()` haben, die die Bezahlung des Mitarbeiters basierend auf seinem Gehalt zurückgibt.
-
-2. Zwei Unterklassen, die die `Employee` Klasse erweitern:
-   - `SalariedEmployee`, die ein Attribut `double salary` (Jahresgehalt) hat, um das Gehalt des Mitarbeiters zu speichern, und einen Konstruktor, der die Parameter `name` und `salary` akzeptiert. Die Klasse soll die Operation `calculatePay()` implementieren, um das monatliche Gehalt des Mitarbeiters zu berechnen, indem es das Jahresgehalt durch 12 teilt.
-   - `HourlyEmployee`, die einen Konstruktor hat, der die Parameter `name` und `hourlyRate` akzeptiert. Darüber hinaus hat die Klasse die zusätzlichen Attribute `int hoursWorked` für die gearbeiteten Stunden des Mitarbeiters und `double hourlyRate` zur Speicherung des stündlichen Gehalts des Mitarbeiters. Implementieren Sie die Operation `calculatePay()`, um das Gehalt des Mitarbeiters zu berechnen, indem Sie den stündlichen Satz mit den gearbeiteten Stunden multiplizieren. Um die gearbeiteten Stunden des Mitarbeiters hinzuzufügen, implementieren Sie die Operation `addHoursWorked(int hours)`.
-
-3. Eine `Main` Klasse, die eine `main()` Operation enthält. In der `main()` Operation sollen Sie eine Liste von `Employee`-Objekten erstellen, die mindestens einen `SalariedEmployee` und mindestens einen `HourlyEmployee` enthält. Durchlaufen Sie die Liste (bzw. iterieren Sie über die Liste) und rufen Sie die `calculatePay()` Operation für jedes Objekt auf. Geben Sie den Namen des Mitarbeiters und sein Gehalt auf der Konsole aus.
+Das Mitarbeiterbeispiel mit einer abstrakten Basisklasse folgt in [ÜB 07b](https://github.com/PHL-INF520-Programmierprojekt/uebungsblatt-07b-oop-advanced). Dort vergleichen Sie abstrakte Klassen mit Interfaces. Für dieses Blatt werden noch keine eigenen abstrakten Klassen oder Interfaces benötigt.

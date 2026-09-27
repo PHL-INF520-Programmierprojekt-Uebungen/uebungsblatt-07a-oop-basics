@@ -1,3 +1,5 @@
+> **Hinweis:** Die aktuelle Aufteilung finden Sie in [README.md](README.md). Diese ältere Übersetzung folgt noch der vorherigen Aufgabenfolge.
+
 # Exercise Sheet
 [Link to German Version](./README.md)
 In this exercise sheet, you will learn to develop object-oriented source code to solve various tasks.
