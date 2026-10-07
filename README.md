@@ -74,4 +74,4 @@ Implementieren Sie eine `equals`-Operation in der `Book` Klasse, die überprüft
 
 Dieses Blatt behandelt konkrete Vererbung, Überschreiben und Zusammensetzung. Im Zoo wird bereits dieselbe Operation über den gemeinsamen Typ `Animal` aufgerufen: Die konkrete Tierklasse bestimmt die ausgeführte Implementierung.
 
-Das Mitarbeiterbeispiel mit einer abstrakten Basisklasse folgt in [ÜB 07b](https://github.com/PHL-INF520-Programmierprojekt/uebungsblatt-07b-oop-advanced). Dort vergleichen Sie abstrakte Klassen mit Interfaces. Für dieses Blatt werden noch keine eigenen abstrakten Klassen oder Interfaces benötigt.
+Das Mitarbeiterbeispiel mit einer abstrakten Basisklasse folgt in [ÜB 07b](https://github.com/PHL-INF520-Programmierprojekt-Uebungen/uebungsblatt-07b-oop-advanced). Dort vergleichen Sie abstrakte Klassen mit Interfaces. Für dieses Blatt werden noch keine eigenen abstrakten Klassen oder Interfaces benötigt.
